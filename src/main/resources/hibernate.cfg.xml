@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <property name = "hibernate.connection.driver_class">
+            org.postgresql.Driver
+        </property>
+
+        <!-- Assume test is the database name -->
+
+        <property name = "hibernate.connection.url">
+            jdbc:postgresql://slon.felk.cvut.cz:5432/db21_shevcdmi
+        </property>
+
+        <property name = "hibernate.connection.username">
+            db21_shevcdmi
+        </property>
+
+        <property name = "hibernate.connection.password">
+            Sk4KW5
+        </property>
+        <property name="show_sql">true</property>
+        <mapping resource="HbmTrash/Work.hbm.xml"/>
+
+
+    </session-factory>
+</hibernate-configuration>
